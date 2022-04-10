@@ -95,8 +95,8 @@ class PlateauController extends Controller
     public function store(Request $request)
     {
         try{
-            $data    = $request->json()->all();
-            $plateau = Plateau::create($data);
+            //$data    = $request->json()->all();
+            $plateau = Plateau::create($request->toArray());
             return response(['message'=>'success.','data'=>$plateau], 200);
         } catch (\Exception $e){
             return response(['message'=>'not success.'.$e->getMessage()], 500);
