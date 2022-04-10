@@ -22,6 +22,10 @@ class PlateauTest extends TestCase
     public function test_can_create_post()
     {
         $master_user = User::where('email','info@okesmez.com')->first();
+        if(!$master_user->token){
+            $master_user->token = $master_user->createToken('api-token')->plainTextToken;
+            $master_user->save();
+        }
 
         $this->withHeaders([
             'Authorization' => 'Bearer '.explode("|",$master_user->token)[1],
@@ -41,6 +45,11 @@ class PlateauTest extends TestCase
     {
         $master_user = User::where('email','info@okesmez.com')->first();
 
+        if(!$master_user->token){
+            $master_user->token = $master_user->createToken('api-token')->plainTextToken;
+            $master_user->save();
+        }
+
         $this->withHeaders([
             'Authorization' => 'Bearer '.explode("|",$master_user->token)[1],
             'Accept' => '*/*'
@@ -54,6 +63,11 @@ class PlateauTest extends TestCase
     public function test_can_show_post()
     {
         $master_user = User::where('email','info@okesmez.com')->first();
+
+        if(!$master_user->token){
+            $master_user->token = $master_user->createToken('api-token')->plainTextToken;
+            $master_user->save();
+        }
 
         if($this->plateau_id){
             $this->withHeaders([
