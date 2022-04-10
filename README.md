@@ -1,4 +1,5 @@
 # Hakkında
+#### Swagger üzerinde görmek için : http://rover.okesmez.com/api/documentation
  - **Laravel 8** Framework'ü üzerine **Php 7.4** ile kodlanmıştır.
  - Docker için **dockerfile** ve **docker-compose.yaml** dosyaları oluşturulmuştur.
  - İçerisinde Restfull servisleri barındırmaktadır.
@@ -33,20 +34,16 @@
  - Yukarıdaki command ile container terminaline girilmiş olur. Proje kodlarının  bulunduğu yere ise`cd data/www` dosya yoluna gidilerek ulaşılır.
 
 ## Postman
-
- - Localhost üzerinde servisleri çalıştırmak için postman üzerine import edilecek olan dosya aşağıdadır.<br>
-https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/local-restfull.postman_collection.json
 - okesmez.com üzerinde çalışan projeyi postman üzerinde test etmek için ise aşağıdaki dosya import edilmelidir.<br>
-https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/okesmez.com-restfull.postman_collection.json
+https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/rover-okesmez.com.postman_collection.json
 
 ## Dosyalar
 
- 1. Route : https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/framework/routes/web.php
- 2. Controller : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Http/Controllers
- 3. Model : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Models
- 4. Seed : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/seeders
- 5. Migrations : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/migrations
- 6. Discount Helper : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Helpers
- 7. Koşturulan artisan ve terminal kodları : https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/configs/recompile.sh
+ 1. Route : https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/framework/routes/web.php
+ 2. Controller : https://github.com/ofke-yazilim/laravel-rover-movement/tree/main/framework/app/Http/Controllers
+ 3. Model : https://github.com/ofke-yazilim/laravel-rover-movement/tree/main/framework/app/Models
+ 4. Seed : https://github.com/ofke-yazilim/laravel-rover-movement/tree/main/framework/database/seeders
+ 5. Migrations : https://github.com/ofke-yazilim/laravel-rover-movement/tree/main/framework/database/migrations
+ 6. Koşturulan artisan ve terminal kodları : https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/configs/recompile.sh
  
 
