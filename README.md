@@ -25,9 +25,10 @@
 > Yukarıdaki işlemlerden sonra birkaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
 ## Test
-- Plateau servisisine ait işlemler için unit test kodlandı. Test sonucunu görebilmek için aşağıdaki komutu ana dizinde çalıştırınız.
+- Plateau servisisine ait işlemler için fonksiyonel ve unit testler kodlandı. Test sonucunu görebilmek için aşağıdaki komutu ana dizinde çalıştırınız.
 <br>`php /data/www/artisan test` <br>
-- **Test Class :** https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/framework/tests/Feature/v1/PlateauTest.php<br>
+- **Fonksiyonel Test Class :** https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/framework/tests/Feature/v1/PlateauTest.php<br>
+- **Unit Test Class :** https://github.com/ofke-yazilim/laravel-rover-movement/blob/main/framework/tests/Unit/v2/PlateauTest.php<br>
 
 ###  İşlem local bilgisayarda yapılıyorsa projeye ait linkler aşağıdadır.
 **Servisler ve Kullanımları :** https://localhost/api/documentation (Servisler bu adresten test edilebilir.)<br>
