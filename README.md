@@ -24,6 +24,10 @@
   `docker-compose up -d --build`
 > Yukarıdaki işlemlerden sonra birkaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
+## TEST
+Plateau servisisine ait işlemler için unit test kodlandı. Test sonucunu görebilmek için aşağıdaki komutu ana dizinde çalıştırınız.
+<br>`php /data/www/artisan test`
+
 ###  İşlem local bilgisayarda yapılıyorsa projeye ait linkler aşağıdadır.
 **Servisler ve Kullanımları :** https://localhost/api/documentation (Servisler bu adresten test edilebilir.)<br>
 **Phpmyadmin:**   http://localhost:8080/ (**username:** root **password:** Z5AajEapuLZuNuv)  
