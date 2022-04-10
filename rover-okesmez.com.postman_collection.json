@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "c71791e0-3c6b-4f89-bfaf-dd0b49d216d4",
+		"name": "rover-okesmez.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"info@okesmez.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/auth/login",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plateau_create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"plateau 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/plateau",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"plateau"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rover_create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Rover Test\",\r\n  \"plateau_id\": \"1\",\r\n  \"direction\": \"N\",\r\n  \"x\": \"0\",\r\n  \"y\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/rover",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"rover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rover_moving",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"number_of_progress\": \"20\",\r\n  \"rover_id\": \"1\",\r\n  \"rover_rotation\": \"R\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/state",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plateau_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/plateau",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"plateau"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rover_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/rover",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"rover"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_rover_state",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rover.okesmez.com/api/v1/rover/state/1",
+					"protocol": "https",
+					"host": [
+						"rover",
+						"okesmez",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"rover",
+						"state",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "XeopOWYaRzV30F7rwkd8GPSBnvxrOlRWcNCpoO69",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
